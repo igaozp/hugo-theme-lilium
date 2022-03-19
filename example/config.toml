@@ -1,0 +1,32 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'Hugo Theme Lilium Example'
+theme = 'lilium'
+preserveTaxonomyNames = true
+paginate = 10
+hasCJKLanguage = true
+
+[outputs]
+home = ["HTML", "RSS"]
+
+[taxonomies]
+tag = "tags"
+category = "categories"
+archive = "archives"
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    pre = "home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Posts"
+    pre = "pen-tool"
+    url = "/posts/"
+    weight = 2
+  [[menu.main]]
+    name = "Tags"
+    pre = "tag"
+    url = "/tags/"
+    weight = 3
