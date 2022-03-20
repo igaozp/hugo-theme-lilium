@@ -1,14 +1,22 @@
-<div id="nav-border" class="container">
-    <nav id="nav" class="nav justify-content-center">
-        {{ range .Site.Menus.main }}
-        <a class="nav-link" href="{{ .URL }}">
-            {{ if .Pre }}
-            {{ $icon := printf "<i data-feather=\"%s\"></i> " .Pre | safeHTML }}
-            {{ $icon }}
+<div id="nav-border" class="navbar bg-base-100">
+    <div class="flex-1">
+        <a class="btn btn-ghost normal-case text-xl">Lilium</a>
+    </div>
+
+    <div class="flex-none">
+        <ul class="menu menu-horizontal p-0">
+            {{ range .Site.Menus.main }}
+            <li>
+                <a class="nav-link" href="{{ .URL }}">
+                    {{ if .Pre }}
+                    {{ $icon := printf "<i data-feather=\"%s\"></i> " .Pre | safeHTML }}
+                    {{ $icon }}
+                    {{ end }}
+                    {{ $text := print .Name | safeHTML }}
+                    {{ $text }}
+                </a>
+            </li>
             {{ end }}
-            {{ $text := print .Name | safeHTML }}
-            {{ $text }}
-        </a>
-        {{ end }}
-    </nav>
+        </ul>
+    </div>
 </div>
