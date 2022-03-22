@@ -1,0 +1,9 @@
+body {
+    font: 16px/1.6 "TIBch", "Diatype T", "Avenir Next", "Segoe UI", "Helvetica Neue", Arial, "Hiragino Sans GB", "PingFang SC", "Heiti SC", "Noto Sans CJK SC", "Source Han Sans SC", "Microsoft YaHei UI", "Microsoft YaHei", sans-serif;
+    font-size: 1.1rem;
+}
+
+p {
+    margin: 0.7em 0 0.7em;
+    text-indent: 2em;
+}
